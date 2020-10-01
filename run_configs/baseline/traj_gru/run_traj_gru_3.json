@@ -1,0 +1,20 @@
+{
+  "data_path": "./data/cm_saf/201501010000_201512312330/time_first_numpy_representation",
+  "run_name": "2h",
+  "model": "traj_gru",
+  "do_validation": true,
+  "lr": 0.0005,
+  "test": true,
+  "save_checkpoints": true,
+  "do_persistence": true,
+  "data_utils_params": {
+    "nr_of_input_steps": 4,
+    "input_frequency": 4,
+    "batch_size": 1,
+    "forecast_horizon": 2
+  },
+  "model_params": {
+    "batch_size": 1,
+    "seq_len": 4
+  }
+}

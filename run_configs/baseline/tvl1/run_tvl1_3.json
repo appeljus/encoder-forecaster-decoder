@@ -1,0 +1,22 @@
+{
+  "data_path": "./data/cm_saf/201501010000_201512312330/time_first_numpy_representation",
+  "run_name": "tvl1_2h",
+  "model": "tvl1",
+  "data_utils_params": {
+    "batch_size": 1,
+    "nr_of_input_steps": 4,
+    "input_frequency": 4,
+    "forecast_horizon": 2
+  },
+  "model_params": {
+    "theta": 0.3,
+    "tau": 0.1,
+    "lambda": 0.03,
+    "epsilon": 0.01,
+    "outer_iterations": 2,
+    "inner_iterations": 10,
+    "warpings": 3,
+    "scales": 3,
+    "scale_step": 0.5
+  }
+}

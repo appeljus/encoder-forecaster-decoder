@@ -1,0 +1,16 @@
+{
+  "data_path": "./data/cm_saf/201501010000_201512312330/randomized_numpy_representation",
+  "run_name": "upsample_transposed",
+  "model": "segnet",
+  "do_validation": true,
+  "lr": 0.0005,
+  "test": true,
+  "save_checkpoints": true,
+  "data_utils_params": {
+    "batch_size": 1
+  },
+  "model_params": {
+    "debug": false,
+    "decoder_type": "transposed"
+  }
+}

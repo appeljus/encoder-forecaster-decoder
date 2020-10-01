@@ -1,0 +1,32 @@
+{
+  "data_path": "./data/cm_saf/201501010000_201512312330/time_first_numpy_representation",
+  "run_name": "baseline",
+  "model": "segnet_conv_lstm",
+  "do_validation": true,
+  "lr": 0.0005,
+  "test": true,
+  "save_checkpoints": true,
+  "do_persistence": true,
+  "data_utils_params": {
+    "nr_of_input_steps": 3,
+    "input_frequency": 1,
+    "batch_size": 1,
+    "forecast_horizon": 4
+  },
+  "model_params": {
+    "input_dim": 512,
+    "hidden_dim": [
+      512
+    ],
+    "kernel_size": [
+      3
+    ],
+    "num_layers": 1,
+    "return_all_layers": true,
+    "debug": false,
+    "decoder_type": "transposed",
+    "soft_start": true,
+    "freeze_encoder_decoder": true,
+    "encoder_decoder_state_dict": "./runs/segnet/upsample/run_05_upsample_transposed/checkpoints/state_dict.pth"
+  }
+}

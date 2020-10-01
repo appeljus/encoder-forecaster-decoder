@@ -1,0 +1,53 @@
+{
+  "data_path": "./data/cm_saf/201501010000_201512312330/time_first_numpy_representation",
+  "run_name": "layers_2_input_3",
+  "model": "segnet_traj_gru",
+  "do_validation": false,
+  "lr": 0.0005,
+  "test": true,
+  "save_checkpoints": false,
+  "do_persistence": true,
+  "data_utils_params": {
+    "nr_of_input_steps": 3,
+    "input_frequency": 4,
+    "batch_size": 1,
+    "forecast_horizon": 1
+  },
+  "model_params": {
+    "input_dim": 512,
+    "hidden_dims": [
+      512,
+      512
+    ],
+    "num_layers": 2,
+    "Ls": [
+      9,
+      9
+    ],
+    "i2h_kernels": [
+      3,
+      3
+    ],
+    "i2h_strides": [
+      1,
+      1
+    ],
+    "i2h_pads": [
+      1,
+      1
+    ],
+    "i2h_dilates": [
+      1,
+      1
+    ],
+    "h2h_kernels": [
+      5,
+      5
+    ],
+    "decoder_type": "transposed",
+    "debug": false,
+    "soft_start": true,
+    "freeze_encoder_decoder": false,
+    "encoder_decoder_state_dict": "./runs/segnet/upsample/run_05_upsample_transposed/checkpoints/state_dict.pth"
+  }
+}

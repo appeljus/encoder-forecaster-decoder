@@ -1,0 +1,9 @@
+opencv-contrib-python
+matplotlib
+netCDF4
+numpy
+paramiko
+torch
+tensorflow
+ecmwf-api-client
+cv2

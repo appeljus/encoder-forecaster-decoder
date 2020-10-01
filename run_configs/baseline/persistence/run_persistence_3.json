@@ -1,0 +1,11 @@
+{
+  "data_path": "./data/cm_saf/201501010000_201512312330/time_first_numpy_representation",
+  "run_name": "persistence_2h",
+  "model": "persistence",
+  "data_utils_params": {
+    "batch_size": 1,
+    "nr_of_input_steps": 4,
+    "input_frequency": 4,
+    "forecast_horizon": 2
+  }
+}
